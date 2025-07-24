@@ -3,6 +3,7 @@ import './App.css';
 import FormPage from './components/Form.jsx';
 import GridPage from './components/Grid.jsx';
 import Loader from './loader.jsx';
+// added a comment
 
 function App() {
   return (
