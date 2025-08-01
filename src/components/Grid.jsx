@@ -9,7 +9,7 @@ function GridPage(){
 
     console.log(data);
     const editDetails=(item)=>{
-        navigate('/', { state: { student: item, type:'edit'} });
+        navigate('/form', { state: { student: item, type:'edit'} });
     }
     
     

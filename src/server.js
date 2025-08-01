@@ -1,30 +1,15 @@
-// server.js
 import contactServer from './client.js'
 
-// function getUser(userId, url) {
 
-//   const requestOptions = {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     data: {
-//       userId: userId
-//     }
-//   };
-
-//   return contactServer(url, requestOptions);
-// }
-
-
-
-async function postUser(data, url){
+async function postUser(user, url){
+  console.log('from postUser', user, url);
+  
   const request = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body:data
+    body:user
   };
   return await contactServer(url, request)
 }
